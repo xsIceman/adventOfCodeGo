@@ -3,6 +3,7 @@ package day2_test
 import (
 	"testing"
 
+	"example.com/adventOfCode/common"
 	"example.com/adventOfCode/day2"
 )
 
@@ -26,7 +27,7 @@ forward 2`
 }
 
 func TestDay2Task1File(t *testing.T) {
-	input := day2.ReadFile("input.txt")
+	input := common.ReadFile("input.txt")
 	pos := day2.Task1(input)
 
 	res := pos.Depth * pos.Horizontal
@@ -61,7 +62,7 @@ forward 2`
 }
 
 func TestDay2Task2File(t *testing.T) {
-	input := day2.ReadFile("input.txt")
+	input := common.ReadFile("input.txt")
 	pos := day2.Task2(input)
 
 	res := pos.Depth * pos.Horizontal

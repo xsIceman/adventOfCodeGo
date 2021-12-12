@@ -1,8 +1,6 @@
 package day2
 
 import (
-	"io/ioutil"
-	"log"
 	"strconv"
 	"strings"
 )
@@ -11,16 +9,6 @@ type Position struct {
 	Horizontal int
 	Depth      int
 	Aim        int
-}
-
-func ReadFile(file string) string {
-	content, err := ioutil.ReadFile(file)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	text := string(content)
-	return text
 }
 
 func Task1(inputs string) Position {
