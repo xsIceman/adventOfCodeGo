@@ -84,15 +84,15 @@ func TestDay3Task2File(t *testing.T) {
 	input := common.ReadFile("input.txt")
 	res := day3.Task2(input)
 
-	if res.OxygenGenerator != 23 {
+	if res.OxygenGenerator != 1599 {
 		t.Errorf("Expected OxygenGenerator to be 1599 %d", res.OxygenGenerator)
 	}
 
-	if res.CO2Scrubber != 10 {
+	if res.CO2Scrubber != 2756 {
 		t.Errorf("Expected CO2Scrubber to be 2756 go %d", res.CO2Scrubber)
 	}
 
-	if res.LifeSupport != 230 {
+	if res.LifeSupport != 4406844 {
 		t.Errorf("Expected LifeSupport to be 4406844 go %d", res.LifeSupport)
 	}
 }
