@@ -1,7 +1,6 @@
 package day5_test
 
 import (
-	"fmt"
 	"testing"
 
 	"example.com/adventOfCode/common"
@@ -45,9 +44,8 @@ func TestTask1MoreThan1(t *testing.T) {
 func TestTask1File(t *testing.T) {
 	input := common.ReadFile("input.txt")
 	res := day5.Task1(input, 1)
-	fmt.Printf("got %d", res)
-	if res != 5 {
-		t.Errorf("Expected 5 points got %d", res)
+	if res != 6461 {
+		t.Errorf("Expected 6461 points got %d", res)
 	}
 }
 
