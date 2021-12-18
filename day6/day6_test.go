@@ -19,6 +19,18 @@ func TestTask1(t *testing.T) {
 	}
 }
 
+func TestTask2(t *testing.T) {
+	input := `3,4,3,1,2`
+	res := day6.Task2(input, 18)
+	if res != 26 {
+		t.Errorf("Expected 26 points got %d", res)
+	}
+	res = day6.Task2(input, 256)
+	if res != 26984457539 {
+		t.Errorf("Expected 26984457539 points got %d", res)
+	}
+}
+
 func TestTask1File(t *testing.T) {
 	input := common.ReadFile("input.txt")
 	res := day6.Task1(input, 18)
@@ -26,6 +38,18 @@ func TestTask1File(t *testing.T) {
 		t.Errorf("Expected 1635 points got %d", res)
 	}
 	res = day6.Task1(input, 80)
+	if res != 360761 {
+		t.Errorf("Expected 360761 points got %d", res)
+	}
+}
+
+func TestTask2File(t *testing.T) {
+	input := common.ReadFile("input.txt")
+	res := day6.Task2(input, 18)
+	if res != 1635 {
+		t.Errorf("Expected 1635 points got %d", res)
+	}
+	res = day6.Task1(input, 256)
 	if res != 360761 {
 		t.Errorf("Expected 360761 points got %d", res)
 	}
