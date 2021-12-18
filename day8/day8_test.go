@@ -29,7 +29,7 @@ func TestTask1FileInput(t *testing.T) {
 	input := common.ReadFile("input.txt")
 	res := day8.Task1(input)
 
-	if res != 323647 {
-		t.Errorf("Expected to get 323647 got %d", res)
+	if res != 390 {
+		t.Errorf("Expected to get 390 got %d", res)
 	}
 }
